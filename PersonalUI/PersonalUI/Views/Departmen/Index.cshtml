@@ -1,4 +1,6 @@
-﻿
+﻿@using PersonalUI.Models.EntitityFramework
+@model List<Departmen>
+
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -6,3 +8,29 @@
 
 <h2>Departman Listesi</h2>
 
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Ad</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var departmen in Model)
+        {
+        <tr>
+            <td>@departmen.Id</td>
+            <td>@departmen.Ad</td>
+            <td><a class="btn btn-warning" href="/Departmen/Güncelle/@departmen.Id">Güncelle</td>
+            <td><a class="btn btn-danger" href="/Departmen/Sil/@departmen.Id">Sil</td>
+            
+        </tr>
+
+        }
+
+    </tbody>
+</table>
