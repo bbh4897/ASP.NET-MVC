@@ -1,0 +1,30 @@
+﻿@model ControllerdanVieweVeriAktarma.DepartmenPersonelViewModel.DepartmenPersonel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>departmenPersonelDetay</title>
+</head>
+<body>
+    <p>Departman Bilgileri;</p>
+    <p>id : @Model.Departmen.id</p>
+    <p>ad : @Model.Departmen.ad</p>
+
+    <p>Personel Bilgileri;</p>
+    <ul>
+        @foreach (var personel in Model.Personel)
+        {
+            <li>@personel.ad</li>
+        }
+
+
+    </ul>
+
+
+</body>
+</html>

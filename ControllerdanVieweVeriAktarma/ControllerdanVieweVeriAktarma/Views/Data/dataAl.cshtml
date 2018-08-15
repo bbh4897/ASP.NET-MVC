@@ -1,0 +1,21 @@
+﻿@model ControllerdanVieweVeriAktarma.Models.Departmen
+
+
+@{
+    Layout = null;
+    var gelenData = (Departmen)ViewData["departmen"];
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>dataAl</title>
+</head>
+<body>
+    Alınan datanın adı : @gelenData.id
+    Alınan datanın adı : @gelenData.ad
+    Alınan datanın adı : @ViewBag.Burcu
+</body>
+</html>
