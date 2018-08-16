@@ -5,6 +5,8 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<p></p>
+<a class="btn btn-success" href="/Departmen/Ekle">Yeni Departman</a>
 
 <h2>Departman Listesi</h2>
 
@@ -27,7 +29,7 @@
             <td>@departmen.Ad</td>
             <td><a class="btn btn-warning" href="/Departmen/Güncelle/@departmen.Id">Güncelle</td>
             <td><a class="btn btn-danger" href="/Departmen/Sil/@departmen.Id">Sil</td>
-            //listeleme
+            
         </tr>
 
         }

@@ -18,5 +18,21 @@ namespace PersonalUI.Controllers
             var model = ent.Departmen.ToList();
             return View(model);
         }
+
+        [HttpGet]
+        public ActionResult Ekle()
+        {            
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Ekle(Departmen departmen)
+        {
+            ent.Departmen.Add(departmen);
+            ent.SaveChanges();
+
+            return RedirectToAction("Index","Departmen");
+        }
+
     }
 }

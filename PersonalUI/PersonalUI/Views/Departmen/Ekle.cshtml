@@ -1,0 +1,26 @@
+﻿@model PersonalUI.Models.EntitityFramework.Departmen
+@{
+                /**/
+
+                ViewBag.Title = "Ekle";
+                Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<form method="post" action="">
+        <div class="form-group">
+            <label>Departman Adı</label>
+            <input type="text" name="Ad" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-success">Ekle</button>
+    </form>*@
+<p></p>
+@using (Html.BeginForm("Ekle", "DEpartmen", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Ad)
+        @Html.TextBoxFor(m => m.Ad, new {@class = "form-control" })
+    </div>
+
+    <button type="submit" class="btn btn-success">Ekle</button>
+}
