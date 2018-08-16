@@ -56,5 +56,17 @@ namespace PersonalUI.Controllers
             return View("Ekle", model);
         }
 
+        public ActionResult sil(int id)
+        {
+            var silId = ent.Departmen.Find(id);
+            if(silId == null)
+            {
+                return HttpNotFound(); 
+            }
+            ent.Departmen.Remove(silId);
+            ent.SaveChanges();
+            return RedirectToAction("Index", "Departmen");
+        }
+
     }
 }
