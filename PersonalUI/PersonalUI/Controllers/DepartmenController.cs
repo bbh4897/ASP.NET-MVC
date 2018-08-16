@@ -26,12 +26,34 @@ namespace PersonalUI.Controllers
         }
 
         [HttpPost]
-        public ActionResult Ekle(Departmen departmen)
+        public ActionResult Kaydet(Departmen departmen)
         {
-            ent.Departmen.Add(departmen);
-            ent.SaveChanges();
+            if (departmen.Id == 0)
+            {
+                ent.Departmen.Add(departmen);
+            }
+            else
+            {
+                var guncelId = ent.Departmen.Find(departmen.Id);
+                if (guncelId == null)
+                {
+                   return  HttpNotFound();
+                }
+                guncelId.Ad = departmen.Ad;
 
+            }
+            ent.SaveChanges();
             return RedirectToAction("Index","Departmen");
+        }
+
+        public ActionResult Guncelle(int id)
+        {
+            var model = ent.Departmen.Find(id);
+            if (model == null)
+            {
+                return HttpNotFound();
+            }
+            return View("Ekle", model);
         }
 
     }
