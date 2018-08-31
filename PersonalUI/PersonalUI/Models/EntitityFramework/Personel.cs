@@ -11,17 +11,23 @@ namespace PersonalUI.Models.EntitityFramework
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Personel
     {
         public int Id { get; set; }
+        [Display(Name = "Departman Numarasý")]
         public Nullable<int> DepartmenId { get; set; }
         public string Ad { get; set; }
         public string Soyad { get; set; }
+        [Display(Name = "Yaþ")]
         public Nullable<byte> Yas { get; set; }
+        [Display(Name = "Maaþ")]
         public Nullable<short> Maas { get; set; }
+        [Display(Name = "Doðum Tarihi")]
         public Nullable<System.DateTime> DogumTarihi { get; set; }
         public bool Cinsiyet { get; set; }
+        [Display(Name = "Medeni Durum")]
         public bool Evlimi { get; set; }
     
         public virtual Departmen Departmen { get; set; }
