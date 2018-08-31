@@ -21,13 +21,17 @@ namespace PersonalUI.Controllers
 
         [HttpGet]
         public ActionResult Ekle()
-        {            
-            return View();
+        {
+            return View("Ekle", new Departmen());
         }
 
         [HttpPost]
         public ActionResult Kaydet(Departmen departmen)
         {
+            if (!ModelState.IsValid)
+            {
+                return View("Ekle");
+            }
             if (departmen.Id == 0)
             {
                 ent.Departmen.Add(departmen);

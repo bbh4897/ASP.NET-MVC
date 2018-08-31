@@ -17,13 +17,20 @@ namespace PersonalUI.Models.EntitityFramework
     {
         public int Id { get; set; }
         [Display(Name = "Departman Numarasý")]
+        [Required(ErrorMessage = "Alan Zorunludur.")]
         public Nullable<int> DepartmenId { get; set; }
+        [Required(ErrorMessage = "Alan Zorunludur.")]
         public string Ad { get; set; }
+        [Required(ErrorMessage = "Alan Zorunludur.")]
         public string Soyad { get; set; }
+        [Required(ErrorMessage = "Alan Zorunludur.")]
         [Display(Name = "Yaþ")]
         public Nullable<byte> Yas { get; set; }
-        [Display(Name = "Maaþ")]
+        [Required(ErrorMessage = "Alan Zorunludur.")]
+        [Display(Name = "Maaþ")]   
+        [Range(1399,5000,ErrorMessage = "Maaþ aralýðý 1400-5000 arasý olmalýdýr.")]
         public Nullable<short> Maas { get; set; }
+        [Required(ErrorMessage = "Alan Zorunludur.")]
         [Display(Name = "Doðum Tarihi")]
         public Nullable<System.DateTime> DogumTarihi { get; set; }
         public bool Cinsiyet { get; set; }
