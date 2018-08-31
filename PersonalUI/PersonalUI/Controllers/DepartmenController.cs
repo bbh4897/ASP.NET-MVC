@@ -66,6 +66,7 @@ namespace PersonalUI.Controllers
             ent.Departmen.Remove(silId);
             ent.SaveChanges();
             return RedirectToAction("Index", "Departmen");
+
         }
 
     }
