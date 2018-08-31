@@ -25,7 +25,8 @@ namespace PersonalUI.Controllers
             return View("Ekle", new Departmen());
         }
 
-        [HttpPost]
+        //[HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Kaydet(Departmen departmen)
         {
             if (!ModelState.IsValid)
