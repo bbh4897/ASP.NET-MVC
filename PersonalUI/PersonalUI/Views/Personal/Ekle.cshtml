@@ -1,0 +1,32 @@
+﻿@model PersonalUI.Models.EntitityFramework.Personel
+@{
+    ViewBag.Title = "Ekle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<p></p>
+@using (Html.BeginForm("Kaydet", "Personal", FormMethod.Post))
+{
+<div class="form-group">
+    @Html.LabelFor(m => m.DepartmenId)
+    @Html.TextBoxFor(m => m.DepartmenId, new { @class = "form-control" })
+    @Html.LabelFor(m => m.Ad)
+    @Html.TextBoxFor(m => m.Ad, new { @class = "form-control" })
+    @Html.LabelFor(m => m.Soyad)
+    @Html.TextBoxFor(m => m.Soyad, new { @class = "form-control" })
+    @Html.LabelFor(m => m.Yas)
+    @Html.TextBoxFor(m => m.Yas, new { @class = "form-control" })
+    @Html.LabelFor(m => m.Maas)
+    @Html.TextBoxFor(m => m.Maas, new { @class = "form-control" })
+    @Html.LabelFor(m => m.DogumTarihi)
+    @Html.TextBoxFor(m => m.DogumTarihi, new { @class = "form-control" })
+    @Html.LabelFor(m => m.Cinsiyet)
+    @Html.TextBoxFor(m => m.Cinsiyet, new { @class = "form-control" })
+    @Html.LabelFor(m => m.Evlimi)
+    @Html.TextBoxFor(m => m.Evlimi, new { @class = "form-control" })
+
+</div>
+    @Html.HiddenFor(m => m.Id)
+    <button type="submit" class="btn btn-success">Kaydet</button>
+}
+

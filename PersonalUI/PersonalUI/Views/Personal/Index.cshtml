@@ -1,0 +1,53 @@
+﻿@using PersonalUI.Models.EntitityFramework
+@model List<Personel>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<p></p>
+<a class="btn btn-success" href="/Personal/Ekle">Yeni Personel</a>
+
+<h2>Personel Listesi</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>DepartmenId</th>
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>Yas</th>
+            <th>Maas</th>
+            <th>DogumTarihi</th>
+            <th>Cinsiyet</th>
+            <th>Evlimi</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var personal in Model)
+        {
+        <tr>
+            <td>@personal.Id</td>
+            <td>@personal.DepartmenId</td>
+            <td>@personal.Ad</td>
+            <td>@personal.Soyad</td>
+            <td>@personal.Yas</td>
+            <td>@personal.Maas</td>
+            <td>@personal.DogumTarihi</td>
+            <td>@personal.Cinsiyet</td>
+            <td>@personal.Evlimi</td>
+            <td><a class="btn btn-warning" href="/Personal/Guncelle/@personal.Id">Güncelle</td>
+            <td><a class="btn btn-danger" href="/Personal/Sil/@personal.Id">Sil</td>
+
+        </tr>
+
+        }
+
+    </tbody>
+</table>
+
