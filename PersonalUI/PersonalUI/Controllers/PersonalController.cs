@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace PersonalUI.Controllers
 {
+    
     public class PersonalController : Controller
     {
         PersonelDbEntities ent = new PersonelDbEntities();

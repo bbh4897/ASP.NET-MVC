@@ -8,11 +8,12 @@ using System.Web.Mvc;
 
 namespace PersonalUI.Controllers
 {
+    
     public class DepartmenController : Controller
     {
 
         PersonelDbEntities ent = new PersonelDbEntities();
-        // GET: Departmen
+       
         public ActionResult Index()
         {
             var model = ent.Departmen.ToList();
