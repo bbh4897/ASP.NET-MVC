@@ -408,11 +408,15 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\DepartmenController.cs" />
+    <Compile Include="Controllers\KullaniciController.cs" />
     <Compile Include="Controllers\PersonalController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\EntitityFramework\Departmen.cs">
+      <DependentUpon>PersonalModal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EntitityFramework\Kullanici.cs">
       <DependentUpon>PersonalModal.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\EntitityFramework\PersonalModal.Context.cs">
@@ -453,6 +457,11 @@
     <Content Include="Views\Departmen\Ekle.cshtml" />
     <Content Include="Views\Personal\Ekle.cshtml" />
     <Content Include="Views\Personal\Index.cshtml" />
+    <Content Include="Views\Kullanici\Create.cshtml" />
+    <Content Include="Views\Kullanici\Delete.cshtml" />
+    <Content Include="Views\Kullanici\Details.cshtml" />
+    <Content Include="Views\Kullanici\Edit.cshtml" />
+    <Content Include="Views\Kullanici\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

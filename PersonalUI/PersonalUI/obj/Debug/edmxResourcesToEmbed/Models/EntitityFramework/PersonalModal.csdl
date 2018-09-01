@@ -42,5 +42,15 @@
       <End Role="Departmen" EntitySet="Departmen" />
       <End Role="Personel" EntitySet="Personel" />
     </AssociationSet>
+    <EntitySet Name="Kullanici" EntityType="PersonelDbModel.Kullanici" />
   </EntityContainer>
+  <EntityType Name="Kullanici">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ad" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Sifre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Rol" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+  </EntityType>
 </Schema>

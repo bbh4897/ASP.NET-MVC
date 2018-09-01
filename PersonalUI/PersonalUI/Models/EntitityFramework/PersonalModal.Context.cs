@@ -27,5 +27,6 @@ namespace PersonalUI.Models.EntitityFramework
     
         public virtual DbSet<Departmen> Departmen { get; set; }
         public virtual DbSet<Personel> Personel { get; set; }
+        public virtual DbSet<Kullanici> Kullanici { get; set; }
     }
 }

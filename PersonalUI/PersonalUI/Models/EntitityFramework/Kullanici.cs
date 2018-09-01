@@ -12,18 +12,11 @@ namespace PersonalUI.Models.EntitityFramework
     using System;
     using System.Collections.Generic;
     
-    public partial class Personel
+    public partial class Kullanici
     {
         public int Id { get; set; }
-        public Nullable<int> DepartmenId { get; set; }
         public string Ad { get; set; }
-        public string Soyad { get; set; }
-        public Nullable<byte> Yas { get; set; }
-        public Nullable<short> Maas { get; set; }
-        public Nullable<System.DateTime> DogumTarihi { get; set; }
-        public bool Cinsiyet { get; set; }
-        public bool Evlimi { get; set; }
-    
-        public virtual Departmen Departmen { get; set; }
+        public string Sifre { get; set; }
+        public string Rol { get; set; }
     }
 }
