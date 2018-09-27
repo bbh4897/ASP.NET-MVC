@@ -1,0 +1,7 @@
+E-Ticaret web site tasarımına başlandı. Dil olarak ASP.Net, veritabanı olarak da MSSQL Server tercih edildi.
+
+Aşamanın birinci kısmında;
+    *bootstrap yardımıyla projenin arayüz tasarımı gerçekleştirildi.
+    *Navbar Kategori ve Login ekran tasarımları yapıldı. 
+    *Header, Footer ve Sidebar PartialView'leri ayrıldı, Index, Hakkımızda, Iletisim, Urunler, Moda, Teknoloji, Kitap&DVD, GirisYap adındaki ActionResultlar ve bunlşara ait Viewlar oluşturuldu.(ulap).
+    *SQL de users adında tablo oluşturulup projeye dahil edildi. Projenin birsonraki aşamasında login ekranına devam edilmesi, veritabanıyla kullanıcı giriş kontrolünün sağlanıp ilgili (Giriş Başarılı/değil veya Kayıt Ol) sayfalara yönlendirilmesinin yapılması düşünülmektedir. 

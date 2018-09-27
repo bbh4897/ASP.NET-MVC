@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Shop Homepage - Start Bootstrap Template</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/shop-homepage.css" rel="stylesheet">
+    <link href="~/Content/loginStyle/loginPageStyle.css" rel="stylesheet">
+
+</head>
+
+  <body>
+
+
+      @Html.Partial("_Header")
+
+      <div class="row">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-3">
+              @Html.Partial("_SideBar")
+          </div>
+          <div class="col-lg-8">
+              @RenderBody()
+          </div>
+      </div>
+
+      @Html.Partial("_Footer")
+    
+      <script src="~/Scripts/jquery-3.0.0.min.js"></script>
+      <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+  </body>
+
+</html>
