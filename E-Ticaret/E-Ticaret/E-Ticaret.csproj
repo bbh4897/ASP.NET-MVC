@@ -107,10 +107,14 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\loginStyle\loginPageStyle.css" />
     <Content Include="Content\shop-homepage.css" />
+    <Content Include="Files\dini.txt" />
     <Content Include="Global.asax" />
+    <Content Include="images\dini.jpg" />
+    <Content Include="images\kişiselGelişim.jpg" />
     <Content Include="images\slider1.jpg" />
     <Content Include="images\slider2.jpg" />
     <Content Include="images\slider3.jpg" />
+    <Content Include="images\yazilim.png" />
     <Content Include="Models\Eticaret.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Eticaret.Context.cs</LastGenOutput>
@@ -173,7 +177,6 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
-    <Content Include="Views\Home\Hakkimizda.cshtml" />
     <Content Include="Views\Home\Urunler.cshtml" />
     <Content Include="Views\Home\Iletisim.cshtml" />
   </ItemGroup>
@@ -213,11 +216,12 @@
     <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.0.0.min.map" />
     <Content Include="Views\Shared\_SideBar.cshtml" />
-    <Content Include="Views\Home\Moda.cshtml" />
-    <Content Include="Views\Home\Teknoloji.cshtml" />
-    <Content Include="Views\Home\KitapDV.cshtml" />
     <Content Include="Views\Home\GirisYap.cshtml" />
     <Content Include="Views\Home\GirisSecim.cshtml" />
+    <Content Include="Views\Home\Dini.cshtml" />
+    <Content Include="Views\Home\Mesleki.cshtml" />
+    <Content Include="Views\Home\KisiselGelisim.cshtml" />
+    <Content Include="Views\Home\İzlediklerim.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

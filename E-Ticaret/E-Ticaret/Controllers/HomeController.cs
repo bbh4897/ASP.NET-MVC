@@ -13,8 +13,8 @@ namespace E_Ticaret.Controllers
         {
             return View();
         }
-        [Route("Hakkımızda")]
-        public ActionResult Hakkimizda()
+        [Route("İzlediklerim")]
+        public ActionResult İzlediklerim()
         {
             return View();
         }
@@ -38,20 +38,20 @@ namespace E_Ticaret.Controllers
 
 
         // Kategoriler
-        [Route("Moda")]
-        public ActionResult Moda()
+        [Route("Dini")]
+        public ActionResult Dini()
         {
             return View();
         }
 
-        [Route("Teknoloji")]
-        public ActionResult Teknoloji()
+        [Route("Mesleki")]
+        public ActionResult Mesleki()
         {
             return View();
         }
 
-        [Route("Kitap-DVD")]
-        public ActionResult KitapDV()
+        [Route("KişiselGelişim")]
+        public ActionResult KisiselGelisim()
         {
             return View();
         }
@@ -63,6 +63,32 @@ namespace E_Ticaret.Controllers
         {
 
             return View();
+        }
+
+
+        // Random
+        [Route("DiniVideoİzle")]
+        public ActionResult DiniVideo()
+        {
+            string[] lines = System.IO.File.ReadAllLines("D:\\PROJELER\\ASP.NET\\E-Ticaret\\E-Ticaret\\Files\\dini.txt");
+            Random rand = new Random();
+            return Redirect(lines[rand.Next(lines.Length)]);
+        }
+
+        [Route("YazilimVideoİzle")]
+        public ActionResult YazilimVideo()
+        {
+            string[] lines = System.IO.File.ReadAllLines("D:\\PROJELER\\ASP.NET\\E-Ticaret\\E-Ticaret\\Files\\yazilim.txt");
+            Random rand = new Random();
+            return Redirect(lines[rand.Next(lines.Length)]);
+        }
+
+        [Route("KişiselGelişimVideoİzle")]
+        public ActionResult KisiselGelisimVideo()
+        {
+            string[] lines = System.IO.File.ReadAllLines("D:\\PROJELER\\ASP.NET\\E-Ticaret\\E-Ticaret\\Files\\kisisel.txt");
+            Random rand = new Random();
+            return Redirect(lines[rand.Next(lines.Length)]);
         }
 
 
