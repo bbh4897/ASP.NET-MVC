@@ -75,3 +75,7 @@ D:\PROJELER\ASP.NET\E-Ticaret\E-Ticaret\obj\Debug\E-Ticaret.csproj.CoreCompileIn
 D:\PROJELER\ASP.NET\E-Ticaret\E-Ticaret\obj\Debug\E-Ticaret.csproj.CopyComplete
 D:\PROJELER\ASP.NET\E-Ticaret\E-Ticaret\obj\Debug\E-Ticaret.dll
 D:\PROJELER\ASP.NET\E-Ticaret\E-Ticaret\obj\Debug\E-Ticaret.pdb
+D:\PROJELER\ASP.NET\E-Ticaret\E-Ticaret\bin\EntityFramework.dll
+D:\PROJELER\ASP.NET\E-Ticaret\E-Ticaret\bin\EntityFramework.SqlServer.dll
+D:\PROJELER\ASP.NET\E-Ticaret\E-Ticaret\bin\EntityFramework.xml
+D:\PROJELER\ASP.NET\E-Ticaret\E-Ticaret\bin\EntityFramework.SqlServer.xml
